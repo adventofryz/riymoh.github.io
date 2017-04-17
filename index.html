@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+ <!-- START OF HEAD -->
+
+<head>
+	<title>Riyaz Mohammed</title>
+
+	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/breakingNews.css">
+	<script src="js/jQuery.js"></script>
+	<script src="js/breakingNews.js"></script>
+
+	<style>
+		body{padding:0; margin:0; font-family:'PT Sans'; font-size:16px; background:url(darkblack.jpg);}
+	</style>
+
+</head>
+ 
+ <!-- END OF HEAD -->
+
+<body>
+
+	 <!-- START OF QUOTE TICKER -->
+
+	<div style="width:100%; max-width:1150px; margin:0 auto; padding:0 20px 50px 20px; box-sizing:border-box;">
+
+		<div class="breakingNews bn-green" id="bn4">
+
+    	<div class="bn-title" style="width: auto;"><h2 style="display: inline-block;">Interesting Proverbs</h2><span></span></div>
+
+        <ul style="left: 177px;">
+        	<li style="display: block; top: 0px;"><a href="#"><span>Albert Einstein</span> - Weakness of Attitude becomes weakness of Character</a></li>
+            <li style="top: -60px; display: block;"><a href="#"><span>Nelson Mandela</span> - It always seems impossible until its done</a></li>
+            <li style="top: -60px; display: block;"><a href="#"><span>Mohandas Karamçand Gandi</span> - You must be the change you wish to see in the world</a></li>
+            <li style="top: -60px; display: block;"><a href="#"><span>Theodore Roosevelt</span> - Do what you can, with what you have, where you are</a></li>
+            <li style="top: -60px; display: block;"><a href="#"><span>Andrew Carnegie</span> - No man will make a great leader who wants to do it all himself or get all the credit for doing it</a></li>
+        </ul>
+        <div class="bn-navi">
+        	<span></span>
+            <span></span>
+        </div>
+    	</div>
+	</div>
+
+	<script>
+	$(window).load(function(e) {		
+		$("#bn4").breakingNews({
+			effect		:"slide-v",
+			autoplay	:true,
+			timer		:6000,
+			color		:'green',
+			border		:true
+		});
+    });
+ 	</script>
+
+ 	<!-- END OF QUOTE TICKER -->
+
+ 	<!-- START OF BGVID -->
+
+ 	<video id="bgvid" playsinline autoplay muted loop>
+  		<source src="sample.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+	<!-- END OF BGVID -->
+
+	<!-- START OF INNER INTRO TEXT -->
+
+	<div id="Riyaz">
+		<h1>Riyaz Mohammed</h1>
+		<p>Aspiring full-stack developer. Tech Geek. Gaming enthusiast.</p>
+	
+	</div>
+
+	<!-- END OF INNER INTRO TEXT -->
+
+	<!-- START OF SECTIONS TEXT -->
+
+	<div class="Sections" style="display: flex; justify-content: space-between;">
+		<div id="biography">
+			<img class= "resize1" src="img/asus.jpg" alt="cannot display image">
+			<p>Personal Life</p>
+		</div>
+
+		<div id="education">
+			<img class= "resize2" src="img/asus.jpg" alt="cannot display image">
+			<p>Education</p>
+		</div>
+
+		<div id="resume">
+			<img class= "resize3" src="img/asus.jpg" alt="cannot display image">
+			<p>Resume</p>	
+		</div>
+	</div>
+
+	<!-- END OF SECTIONS TEXT -->
+
+
+</body>
+</html>
