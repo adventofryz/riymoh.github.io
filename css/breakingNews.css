@@ -60,11 +60,11 @@ video{
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	z-index: -100;
+	z-index: -1000;
 	transform: translateX(-50%) translateY(-50%);
 	background: url('darkblack.jpg') no-repeat;
 	background-size: cover;
-  	transition: 1s opacity;
+  transition: 1s opacity;
 }
 
 .stopfade { 
@@ -74,15 +74,17 @@ video{
 #Riyaz { 
   font-family:'PT Sans';
   font-weight:80; 
-  background: rgba(0,0,0,0.3);
+  /* background: rgba(0,0,0,0.3); */
   color: white;
   padding: 2rem;
 
-  position:absolute;
+  position:relative;
   left:0;
   right:0;
   margin-left: auto;
   margin-right: auto;
+
+  margin-top: 20px;
 
   max-width: 50rem;
 
@@ -93,6 +95,8 @@ video{
   box-sizing: border-box;
   
   font-size: 1.2rem;
+
+  z-index: 1;
 
 }
 
@@ -103,49 +107,43 @@ h1 {
   letter-spacing: .3rem;
 }
 
-.Sections{
-  font-family:'PT Sans';
-  font-weight:80; 
-  color: white;
-  padding: 2rem;
-
-  position:absolute;
-  left:0;
-  right:0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20rem;
-
+#container{
+  position: fixed;
+  height: 200px;
+  display: inline-flex;
+  justify-content: space-between;
   max-width: 50rem;
 
-  text-align: center;
-  word-wrap: break-word;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 
-  /* border: 0.3rem solid #73AD21; */
-  box-sizing: border-box;
-  
+  margin-top: 100px;
+
+  z-index: 0;
+}
+
+.box1, .box2, .box3{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.box1 p, .box2 p, .box3 p{
+  font-family:'PT Sans';
+  font-weight:80; 
   font-size: 1.2rem;
-
+   
+  color: white;
+  text-align: center;
 }
 
-#biography, #education, #resume{
+.box1 img, .box2 img, .box3 img{
+  width: 100%;
+  height: 60%;
 
-	background: rgba(0,0,0,0.3);
-	
-	box-sizing: border-box;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-img.resize1{
-	max-width: 200px;
-	max-height: 200px;
-}
-
-img.resize2{
-	max-width: 200px;
-	max-height: 200px;
-}
-
-img.resize3{
-	max-width: 200px;
-	max-height: 200px;
-}
