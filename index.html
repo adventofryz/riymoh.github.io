@@ -78,27 +78,73 @@
 
 	<!-- END OF INNER INTRO TEXT -->
 
+	<!-- START OF OVERLAY TEXTS -->
+
+	<div id="myNav1" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav(1)">&times;</a>
+		<div class="overlay-content">
+			<a href="#">About</a>
+		</div>
+		
+	</div>
+
+	<div id="myNav2" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav(2)">&times;</a>
+		<div class="overlay-content">
+			<a href="#">Services</a>
+		</div>
+		
+	</div>
+
+	<div id="myNav3" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav(3)">&times;</a>
+		<div class="overlay-content">
+			<a href="#">Clients</a>
+		</div>
+		
+	</div>
+
+
+	<!-- END OF OVERLAY TEXTS -->
+
 	<!-- START OF SECTIONS TEXT -->
 
 	<div id="container">
-		<div class="box1">
+		<div class="box1" style="font-size: 30px ; cursor: pointer" onclick="openNav(1)">
 			<img src="img/asus.jpg">
 			<p>Personal Life</p>
 		</div>
 
-		<div class="box2">
+		<div class="box2" style="font-size: 30px ; cursor: pointer" onclick="openNav(2)">
 			<img src="img/cmu.jpg">
 			<p>Education</p>
 		</div>
 
-		<div class="box3">
-			<img src="img/resume.jpg">
+		<div class="box3" style="font-size: 30px ; cursor: pointer" onclick="openNav(3)">
+			<img src="img/resume.JPG">
 			<p>Resume</p>
 		</div>
 		
 	</div> 
 
 	<!-- END OF SECTIONS TEXT -->
+
+
+	<!-- START OF OVERLAY SCRIPT -->
+
+	<script>
+	function openNav(x) {
+    	document.getElementById("myNav" + x).style.width = "100%";
+	}
+
+	function closeNav(x) {
+    	document.getElementById("myNav" + x).style.width = "0%";
+	}
+	</script>
+
+	<!-- END OF OVERLAY SCRIPT -->
+
+
 
 
 </body>
