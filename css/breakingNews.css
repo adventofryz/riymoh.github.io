@@ -108,11 +108,15 @@ h1 {
 }
 
 #container{
-  position: fixed;
+  position: relative;
   height: 200px;
-  display: inline-flex;
+
+  display: flex;
   justify-content: space-between;
+
   max-width: 50rem;
+
+  text-align: center;
 
   left:0;
   right: 0;
@@ -120,6 +124,8 @@ h1 {
   margin-right: auto;
 
   margin-top: 40px;
+
+  box-sizing: border-box;
 
   z-index: 0;
 }
@@ -201,7 +207,7 @@ h1 {
 }
 
 .footerWrap {
-    margin-top: 260px;
+    margin-top: 50px;
     width:100%;
     position:relative;
     bottom: 0px;
